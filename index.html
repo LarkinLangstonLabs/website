@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Larkin Langston Labs offers expert web development, UI/UX design, and e-commerce solutions in Duluth, GA. Transform your digital presence with our innovative services.">
+    <meta name="keywords" content="web development, UI/UX design, e-commerce solutions, Duluth web developers, Larkin Langston Labs, website design Duluth">
+    <meta name="author" content="Larkin Langston Labs">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Larkin Langston Labs - Web Development Excellence in Duluth">
+    <meta property="og:description" content="Crafting innovative web solutions in Duluth, GA. Specializing in web development, UI/UX design, and e-commerce platforms.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://larkinlangston.com">
+    <meta property="og:image" content="https://larkinlangston.com/logo.png">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Larkin Langston Labs - Web Development Excellence in Duluth">
+    <meta name="twitter:description" content="Crafting innovative web solutions in Duluth, GA. Specializing in web development, UI/UX design, and e-commerce platforms.">
+    <meta name="twitter:image" content="https://larkinlangston.com/logo.png">
+    <title>Larkin Langston Labs - Web Development Excellence</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .smooth-scroll { scroll-behavior: smooth; }
+        .hero-bg { 
+            background: linear-gradient(135deg, #1a1a1a 0%, #f97316 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+        .nav-sticky { transition: background-color 0.3s ease; }
+        .nav-sticky.scrolled { background-color: rgba(26, 26, 26, 0.95); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .company-logo { filter: grayscale(100%); transition: filter 0.3s ease; }
+        .company-logo:hover { filter: grayscale(0%); }
+        @media (max-width: 640px) {
+            .hero-bg { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+            .text-4xl { font-size: 2rem; }
+            .text-6xl { font-size: 2.5rem; }
+            .text-lg { font-size: 1rem; }
+            .text-xl { font-size: 1.125rem; }
+            .text-2xl { font-size: 1.25rem; }
+            .py-24 { padding-top: 4rem; padding-bottom: 4rem; }
+            .max-w-7xl { padding-left: 1rem; padding-right: 1rem; }
+        }
+        @media (max-width: 768px) {
+            .md\\:grid-cols-2, .md\\:grid-cols-3, .md\\:grid-cols-4 { grid-template-columns: 1fr; }
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+    <!-- Schema Markup for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Larkin Langston Labs",
+        "description": "Expert web development and design services in Duluth, GA, specializing in custom websites, UI/UX, and e-commerce solutions.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Duluth",
+            "addressRegion": "GA",
+            "postalCode": "30096",
+            "addressCountry": "US"
+        },
+        "url": "https://larkinlangston.com",
+        "telephone": "+1-678-555-1234",
+        "openingHours": "Mo-Fr 09:00-17:00"
+    }
+    </script>
+</head>
+<body class="smooth-scroll bg-gray-900">
+    <!-- Navigation -->
+    <nav class="nav-sticky fixed w-full z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl sm:text-2xl font-bold text-white">
+                        <img src="/nobg.PNG" alt="Larkin Langston Labs Logo" height="40" width="40" class="inline-block">
+                        Larkin Langston Labs
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-6">
+                    <a href="#home" class="text-white hover:text-orange-500 px-3 py-2 rounded-full text-sm font-medium transition">Home</a>
+                    <a href="#about" class="text-white hover:text-orange-500 px-3 py-2 rounded-full text-sm font-medium transition">About</a>
+                    <a href="#services" class="text-white hover:text-orange-500 px-3 py-2 rounded-full text-sm font-medium transition">Services</a>
+                    <a href="#projects" class="text-white hover:text-orange-500 px-3 py-2 rounded-full text-sm font-medium transition">Projects</a>
+                    <a href="#contact" class="text-white hover:text-orange-500 px-3 py-2 rounded-full text-sm font-medium transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 shadow-lg">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="block text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#services" class="block text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#projects" class="block text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="block text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-20 sm:pt-24 pb-24 sm:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">Elevate Your Digital Presence with Larkin Langston Labs</h1>
+            <p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto">Expert web development and design services in Duluth, GA, delivering innovative solutions for your business success.</p>
+            <a href="#contact" class="inline-block bg-orange-500 text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full hover:bg-orange-600 transition text-sm sm:text-base">Launch Your Web Project</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-12 sm:mb-16">About Larkin Langston Labs</h2>
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-12">
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl card-hover">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-orange-500 mb-3 sm:mb-4">Our Mission</h3>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">To deliver cutting-edge web development solutions in Duluth, enhancing user experiences and driving business growth.</p>
+                </div>
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl card-hover">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-orange-500 mb-3 sm:mb-4">Our Vision</h3>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">To be Duluth’s premier web development agency, setting the standard for innovative digital experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-12 sm:mb-16">Our Web Development Services</h2>
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-gray-900 p-6 sm:p-8 rounded-xl card-hover">
+                    <div class="text-orange-500 mb-3 sm:mb-4">
+                        <svg class="w-10 h-10 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 0V6m0 12v-2"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-3 sm:mb-4">Custom Web Development</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Building responsive, high-performance websites tailored to your business needs in Duluth.</p>
+                </div>
+                <div class="bg-gray-900 p-6 sm:p-8 rounded-xl card-hover">
+                    <div class="text-orange-500 mb-3 sm:mb-4">
+                        <svg class="w-10 h-10 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6m-6 0h6m4 0h-4m-6 0H5m4-9V5h6v3m-6 0h6"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-3 sm:mb-4">UI/UX Design</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Creating intuitive, user-friendly interfaces to engage and retain your audience.</p>
+                </div>
+                <div class="bg-gray-900 p-6 sm:p-8 rounded-xl card-hover">
+                    <div class="text-orange-500 mb-3 sm:mb-4">
+                        <svg class="w-10 h-10 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-3 sm:mb-4">E-Commerce Solutions</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">Developing secure, scalable online stores to boost your sales in Duluth and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 sm:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-12 sm:mb-16">Our Web Development Projects</h2>
+            <p class="text-base sm:text-lg text-gray-300 text-center mb-8 sm:mb-12 max-w-2xl mx-auto">Explore our portfolio of innovative web solutions built for clients in Duluth and across various industries.</p>
+            <div class="grid md:grid-cols-4 gap-6 sm:gap-8">
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl card-hover text-center">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 company-logo text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">Duluth Retail Hub</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">A vibrant e-commerce platform for local Duluth retailers, optimized for sales.</p>
+                </div>
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl card-hover text-center">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 company-logo text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6m-6 0h6m4 0h-4m-6 0H5m4-9V5h6v3m-6 0h6"></path></svg>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">Health Connect</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">A user-friendly healthcare booking website for Duluth medical providers.</p>
+                </div>
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl card-hover text-center">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 company-logo text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 0c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 0V6m0 12v-2"></path></svg>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">EduStream</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">An educational platform for online learning, serving Duluth’s students.</p>
+                </div>
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl card-hover text-center">
+                    <svg class="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 company-logo text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5v14"></path></svg>
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-2">Green Living</h3>
+                    <p class="text-gray-300 text-sm sm:text-base">A sustainability-focused community website for Duluth residents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-12 sm:mb-16">Contact Our Duluth Team</h2>
+            <div class="max-w-md sm:max-w-lg mx-auto bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg">
+                <div class="space-y-5 sm:space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                        <input type="text" id="name" class="mt-1 block w-full p-2 sm:p-3 border border-gray-600 rounded-lg focus:ring-orange-500 focus:border-orange-500 bg-gray-700 text-white" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                        <input type="email" id="email" class="mt-1 block w-full p-2 sm:p-3 border border-gray-600 rounded-lg focus:ring-orange-500 focus:border-orange-500 bg-gray-700 text-white" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" rows="4" class="mt-1 block w-full p-2 sm:p-3 border border-gray-600 rounded-lg focus:ring-orange-500 focus:border-orange-500 bg-gray-700 text-white" placeholder="Tell us about your web project"></textarea>
+                    </div>
+                    <button onclick="alert('Message sent! Our Duluth team will get back to you soon.')" class="w-full bg-orange-500 text-white font-semibold py-2 sm:py-3 px-4 sm:pb-6 rounded-lg hover:bg-orange-600 transition text-sm sm:text-base">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-base sm:text-lg">© 2025 Larkin Langston Labs. All rights reserved.</p>
+            <div class="mt-4 sm:mt-6 space-x-4 sm:space-x-6">
+                <a href="/privacy-policy" class="text-gray-300 hover:text-orange-500 transition text-sm sm:text-base">Privacy Policy</a>
+                <a href="/terms-of-service" class="text-gray-300 hover:text-orange-500 transition text-sm sm:text-base">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
